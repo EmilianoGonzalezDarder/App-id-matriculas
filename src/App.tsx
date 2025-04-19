@@ -22,7 +22,7 @@ function App() {
     // Verificar si la matrícula está en la lista de autorizadas
     const estaAutorizado = matriculasAutorizadas.includes(matriculaNormalizada)
     // Establecer el resultado de la consulta
-    setResultado(estaAutorizado ? 'Vehículo autorizado' : 'Vehículo sin registrar')
+    setResultado(estaAutorizado ? 'Vehículo autorizado' : 'Vehículo sin registrar >> se dará aviso a la grúa para su remoción')
     // Incrementar el contador de consultas
     setCount(prevCount => prevCount + 1)
   }
@@ -87,7 +87,7 @@ function App() {
       
       <div>
         <a href="https://react.dev" target="_blank">
-          <h1>Urbanización Entresierras</h1>
+          <h1>Urbanización Parquesierra</h1>
         </a>
       </div>
       <p>App para identificar vehículos autorizados, introduzca los datos:</p>
