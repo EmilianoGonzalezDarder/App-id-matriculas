@@ -49,7 +49,7 @@ function App() {
       <div style={{
         display: 'flex',
         justifyContent: 'flex-end',
-        borderRadius: '15px',
+        borderRadius: '8px',
         padding: '15px',
         backgroundColor: '#f8f9fa',
         borderBottom: '1px solid #ddd'
@@ -86,9 +86,7 @@ function App() {
       </div>
       
       <div>
-        <a href="https://react.dev" target="_blank">
           <h1>Urbanización Parquesierra</h1>
-        </a>
       </div>
       <p>App para identificar vehículos autorizados, introduzca los datos:</p>
       <form
@@ -175,8 +173,9 @@ function App() {
         </p>
       </div>
       
-      <p className="read-the-docs">
-        Pincha aquí para más información
+      <p className="read-the-docs" >
+        <a href="https://react.dev" target="_blank">
+        Pincha aquí para más información</a>
       </p>
       
       {/* Modal de Login */}
