@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# 📸 Sistema de Identificación de Matrículas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🚀 Proyecto en Desarrollo
 
-Currently, two official plugins are available:
+Este proyecto ha sido encargado por una **comunidad de propietarios** de una urbanización ubicada en la **Sierra de Madrid**. Su propósito es mejorar el control de acceso mediante un sistema automatizado de **reconocimiento de matrículas**, permitiendo una gestión eficiente y segura de los vehículos autorizados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🏗️ Estado del Proyecto
+🔹 **Fase:** En desarrollo 🛠️  
+🔹 **Funcionalidades básicas implementadas:**
+- Captura y procesamiento de imágenes 📷
+- Detección y extracción de matrículas 🔍
+- Almacenamiento y consulta de datos 📊
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔹 **Próximas implementaciones:**
+- Integración con sistemas de control de acceso 🚧
+- Panel de administración para gestión de vehículos y usuarios 🔑
+- Alertas y notificaciones en tiempo real 📢
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📌 Tecnologías Utilizadas
+- **Frontend:** React.js ⚛️
+- **Backend:** Node.js + Express 🌐
+- **Base de Datos:** PostgreSQL 🗄️
+- **Procesamiento de Imágenes:** OpenCV + Tesseract OCR 🖼️
+- **Autenticación:** JWT 🔐
+- **Despliegue:** Docker + Nginx 🐳
+
+---
+
+## 📷 Captura de Pantalla *(Próximamente)*
+
+---
+
+## 🚀 Instalación y Uso
+```bash
+# Clonar el repositorio
+git clone https://github.com/usuario/proyecto-identificacion-matriculas.git
+cd proyecto-identificacion-matriculas
+
+# Instalar dependencias del backend
+cd backend
+npm install
+
+# Instalar dependencias del frontend
+cd ../frontend
+npm install
+
+# Ejecutar el backend
+npm start
+
+# Ejecutar el frontend
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🤝 Contribuciones
+Dado que el proyecto está en desarrollo, cualquier sugerencia o mejora es bienvenida. Puedes abrir un **issue** o hacer un **pull request** en el repositorio.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📄 Licencia
+Este proyecto se encuentra bajo la licencia **MIT**. Puedes utilizarlo y modificarlo libremente.
+
+---
+🔹 *Proyecto desarrollado con el objetivo de mejorar la seguridad y accesibilidad de la comunidad.* 🚗💨
